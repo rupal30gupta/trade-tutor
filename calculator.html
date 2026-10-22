@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trading Calculator | AI Trade Tutor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a class="logo" href="index.html">
+            AI <span>Trade Tutor</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="learn.html">Learn</a>
+            <a href="tutor.html">AI Tutor</a>
+            <a class="active" href="calculator.html">Calculator</a>
+            <a href="market-basics.html">Market Basics</a>
+            <a href="risk-management.html">Risk Management</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <p class="tag">PRACTISE WITH NUMBERS</p>
+        <h1>Trading Calculator</h1>
+        <p>
+            Understand how basic trading profit and loss
+            calculations work.
+        </p>
+    </section>
+
+    <main class="content">
+
+        <!-- Calculator Form -->
+        <section class="lesson">
+            <h2>🧮 Profit & Loss Calculator</h2>
+
+            <p>
+                Enter sample values to understand the
+                calculation process.
+            </p>
+
+            <br>
+
+            <form class="demo-form" action="#" method="get">
+
+                <div>
+                    <label for="buy">Buy Price (₹)</label>
+                    <input
+                        type="number"
+                        id="buy"
+                        name="buy"
+                        min="0"
+                        step="0.01"
+                        placeholder="Example: 100"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="sell">Sell Price (₹)</label>
+                    <input
+                        type="number"
+                        id="sell"
+                        name="sell"
+                        min="0"
+                        step="0.01"
+                        placeholder="Example: 120"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                        step="1"
+                        placeholder="Example: 10"
+                        required
+                    >
+                </div>
+
+                <button type="button" class="btn">
+                    Calculate Profit / Loss
+                </button>
+
+            </form>
+
+            <div class="demo-answer">
+                <h3>Result Preview</h3>
+                <p>
+                    Your calculated profit or loss will appear
+                    here after interactive functionality is added.
+                </p>
+            </div>
+        </section>
+
+        <!-- Formula Section -->
+        <section class="lesson">
+            <h2>📘 Profit and Loss Formula</h2>
+
+            <p>
+                <strong>
+                    Profit or Loss = (Sell Price − Buy Price) × Quantity
+                </strong>
+            </p>
+
+            <br>
+
+            <h3>Example</h3>
+
+            <p>Buy Price = ₹100</p>
+            <p>Sell Price = ₹120</p>
+            <p>Quantity = 10 shares</p>
+
+            <br>
+
+            <p>
+                Profit = (₹120 − ₹100) × 10
+            </p>
+
+            <p>
+                <strong>Profit = ₹200</strong>
+            </p>
+
+            <p>
+                This example excludes brokerage, taxes and
+                other transaction costs.
+            </p>
+        </section>
+
+        <!-- Percentage Return -->
+        <section class="lesson">
+            <h2>📊 Percentage Return</h2>
+
+            <p>
+                Percentage Return = (Profit or Loss ÷
+                Initial Investment) × 100
+            </p>
+
+            <br>
+
+            <p>
+                In the example above, the initial investment
+                is ₹1,000 and the profit is ₹200.
+            </p>
+
+            <p>
+                Percentage Return = (200 ÷ 1,000) × 100
+            </p>
+
+            <p><strong>Percentage Return = 20%</strong></p>
+        </section>
+
+        <!-- Risk Reminder -->
+        <section class="notice">
+            <h2>Understand the Risk</h2>
+
+            <p>
+                Actual trading results may differ due to
+                price movements, transaction charges and taxes.
+                Profit is never guaranteed.
+            </p>
+
+            <br>
+
+            <a href="risk-management.html" class="btn">
+                Learn Risk Management →
+            </a>
+
+            <a href="learn.html" class="btn btn-outline">
+                Learn Trading
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 AI Trade Tutor | Learn Finance the Smart Way</p>
+
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="learn.html">Learn</a> |
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
